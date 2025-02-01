@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto; /* Dynamically adjust height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #a6c1ee, #fbc2eb); /* Background gradient */
+    animation: bgAnimation 10s infinite alternate; /* Animate the gradient */
+}
+
+/* Global object width */
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar design */
+nav {
+    background-color: #138065;
+    box-shadow: 0 7px 10px rgba(43, 5, 103, 0.793);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+/* Logo styling */
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Search section styling */
+.search-content {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #138065;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjusted space between input and button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+#search-button:hover {
+    transform: scale(1.1); /* Button hover animation */
+    background-color: #0e5b4a;
+    color: white;
+}
+
+/* Blog container */
+#blog-container {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0; /* Remove extra bottom space */
+}
+
+/* Blog card styles */
+.blog-card {
+    width: 280px;
+    border: 1px solid #2d4c50;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Image styling */
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Blog title */
+.blog-card h2 {
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* Blog description */
+.blog-card p {
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+    color: #4a4a4a;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 500px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+
+    #search-input {
+        width: 150px;
+        padding: 10px 10px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+}
+
+/* Background animation */
+@keyframes bgAnimation {
+    0% {
+        background: linear-gradient(120deg, #a6c1ee, #fbc2eb);
+    }
+    50% {
+        background: linear-gradient(120deg, #fbc2eb, #a1c4fd);
+    }
+    100% {
+        background: linear-gradient(120deg, #a1c4fd, #a6c1ee);
+    }
+}
