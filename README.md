@@ -1,1 +1,1 @@
-# NNewsSnap---Your-News-Hub
+# NewsSnap---Your-News-Hub
