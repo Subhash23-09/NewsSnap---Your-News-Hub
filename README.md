@@ -1,65 +1,53 @@
-NewsSnap - Your News Hub
+# NewsSnap - Your News Hub
 
 NewsSnap is a simple news aggregator that fetches and displays the latest news headlines from TechCrunch and allows users to search for news articles on any topic using the NewsAPI.
 
-Features
+# Features
 
-Fetches the latest news from TechCrunch.
+- Fetches the latest news from TechCrunch.
 
-Allows users to search for news articles based on their query.
+- Allows users to search for news articles based on their query.
 
-Displays news articles with images, titles, and descriptions.
+- Displays news articles with images, titles, and descriptions.
 
-Clicking on a news card redirects the user to the full article.
+- Clicking on a news card redirects the user to the full article.
 
-Responsive design for better usability on different devices.
+- Responsive design for better usability on different devices.
 
-Technologies Used
+# Prerequisites
 
-HTML
+- A web browser (Google Chrome, Mozilla Firefox, etc.)
 
-CSS
+- A valid API key from NewsAPI
 
-JavaScript
+# Installation
 
-NewsAPI (https://newsapi.org)
+- Clone the repository:
 
-Getting Started
+git clone https://github.com/Subhash23-09/NewsSnap---Your-News-Hub.git
 
-Prerequisites
-
-A web browser (Google Chrome, Mozilla Firefox, etc.)
-
-A valid API key from NewsAPI
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/NewsSnap.git
-
-Navigate to the project directory:
+- Navigate to the project directory:
 
 cd NewsSnap
 
-Open index.html in a web browser.
+- Open index.html in a web browser.
 
-Configuration
+# Configuration
 
-Open script.js.
+- Open script.js.
 
-Replace the apiKey value with your own NewsAPI key:
+- Replace the apiKey value with your own NewsAPI key:
 
 const apiKey = 'YOUR_NEWSAPI_KEY_HERE';
 
-Save the file and refresh the browser.
+- Save the file and refresh the browser.
 
-Usage
+# Usage
 
-Open the website.
+- Open the website.
 
-View the latest tech news from TechCrunch.
+- View the latest tech news from TechCrunch.
 
-Enter a keyword in the search bar to find related articles.
+- Enter a keyword in the search bar to find related articles.
 
-Click on a news card to read the full article.
+- Click on a news card to read the full article.
